@@ -1,3 +1,5 @@
+"use client";
+
 import { filmes } from '../data/filmes';
 import CardFilme from '../components/CardFilme'
 
