@@ -10,6 +10,17 @@ function Home () {
         gap: "16px",
         listStyle: "none",
     };
+    
+    const urlVamosChamar =
+    `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.NEXT_PUBLIC_TMDB_API_KEY}&language=pt-BR&page=1`;
+
+    let resposta = null;
+
+    fetch(urlVamosChamar).then(res => {
+        resposta = res;
+    });
+
+    console.log(resposta);
 
     return (
         <>
